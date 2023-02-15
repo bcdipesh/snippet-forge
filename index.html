@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Snippet Generator for VSCode">
+    <meta name="author" content="Dipesh B C">
+    <title>Snippet Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="user-input">
+            <input type="text" name="name" id="name" placeholder="Snippet Name...">
+            <input type="text" name="prefix" id="prefix" placeholder="Snippet Trigger Prefix...">
+            <input type="text" name="description" id="description" placeholder="Snippet Description...">
+            <textarea title="snippet" name="snippet" id="snippet" cols="30" rows="10"></textarea>
+        </div>
+        <div class="result">
+            <pre>
+                <code>
+                    <span class="snippet-name"></span>: {
+                        "prefix": <span class="snippet-prefix"></span>,
+                        "body": [
+                        <span class="snippet-body"></span>
+                        ],
+                        "description": <span class="snippet-description"></span>
+                    }
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <script src="snippet-generator.js"></script>
+</body>
+
+</html>
