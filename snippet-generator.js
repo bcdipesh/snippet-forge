@@ -7,11 +7,12 @@ const prefixInput = document.querySelector('#prefix');
 const descriptionInput = document.querySelector('#description');
 const snippetInput = document.querySelector('#snippet');
 
-const snippetName = document.querySelector('.snippet-name');
-const snippetPrefix = document.querySelector('.snippet-prefix');
-const snippetBody = document.querySelector('.snippet-body');
-const snippetDescription = document.querySelector('.snippet-description');
-
+/**
+ * Gathers user input from the input field and returns
+ * an object containing all the input value.
+ *
+ * @returns {Object} Object with values of input field.
+ */
 const collectUserInput = () => {
 	return {
 		name: nameInput.value.trim(),
@@ -21,24 +22,35 @@ const collectUserInput = () => {
 	};
 };
 
+/**
+ * Helper function that generates a snippet object with the
+ * parameters passed to it and then displays it to the DOM.
+ *
+ * @param {string} name 		The name of the snippet.
+ * @param {string} prefix 		The shortcut to trigger the snippet.
+ * @param {string} description 	The description for the snippet.
+ * @param {string} snippet 		The actual snippet snippet.
+ */
 const setSnippet = (name, prefix, description, snippet) => {
-	snippetName.innerText = name;
-	snippetPrefix.innerText = prefix;
-	snippetDescription.innerText = description;
-	snippetBody.innerHTML = '';
-	snippet.forEach((userSnippet, index) => {
-		const paragraph = document.createElement('p');
+	// create a snippet object with the arguments passed
+	const snippetObject = {
+		prefix,
+		body: [...snippet],
+		description,
+	};
 
-		if (snippet.length - 1 === index) {
-			paragraph.innerText = `"${userSnippet}"`;
-		} else {
-			paragraph.innerText = `"${userSnippet}",`;
-		}
-
-		snippetBody.appendChild(paragraph);
-	});
+	// select DOM and insert the formatted JSON string output of the generated snippet
+	document.querySelector(
+		'.result pre code'
+	).innerText = `"${name}":${JSON.stringify(snippetObject, undefined, 4)}`;
 };
 
+/**
+ * Generates a snippet from the input provided by
+ * the user.
+ *
+ * @param {Object} e	The event object.
+ */
 const generateSnippet = (e) => {
 	const { name, prefix, description, snippet } = collectUserInput();
 	setSnippet(name, prefix, description, snippet);
