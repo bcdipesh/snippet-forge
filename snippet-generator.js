@@ -34,17 +34,27 @@ const collectUserInput = () => {
 const setSnippet = (name, prefix, description, snippet) => {
 	// create a snippet object with the arguments passed
 	const snippetObject = {
-		prefix,
-		body: [...snippet],
-		description,
+		[name]: {
+			prefix,
+			body: [...snippet],
+			description,
+		},
 	};
 
+	let snippetJSONString = JSON.stringify(snippetObject, undefined, 4);
+
+	const openingCurlyBraceIndex = snippetJSONString.indexOf('{');
+	const closingCurlyBraceIndex = snippetJSONString.lastIndexOf('}');
+
+	// remove the extra opening and curly braces of the JSONString
+	// to get the desired result
+	snippetJSONString = snippetJSONString.substring(
+		openingCurlyBraceIndex + 1,
+		closingCurlyBraceIndex
+	);
+
 	// select DOM and insert the formatted JSON string output of the generated snippet
-	document.querySelector('code').innerText = `"${name}":${JSON.stringify(
-		snippetObject,
-		undefined,
-		4
-	)}`;
+	document.querySelector('.result pre code').innerText = snippetJSONString;
 };
 
 /**
