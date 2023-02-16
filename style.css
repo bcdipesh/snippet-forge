@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+	overflow: hidden;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: lightgray;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.user-input,
+.user-result {
+	width: 49%;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+}
+
+input[type='text'] {
+	padding: 1rem;
+	font-size: 1rem;
+	border: none;
+	width: 32%;
+}
+
+textarea {
+	margin-top: 1rem;
+	height: 50vh;
+	width: 50vw;
+	width: 100%;
+	border: none;
+	resize: none;
+	padding: 1rem;
+	font-size: 1rem;
+}
+
+input,
+textarea:focus {
+	outline: none;
+}
+
+.user-result {
+	background-color: white;
+	padding: 1rem;
+}
+
+.result {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}

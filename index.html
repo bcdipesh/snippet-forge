@@ -8,28 +8,34 @@
     <meta name="description" content="Snippet Generator for VSCode">
     <meta name="author" content="Dipesh B C">
     <title>Snippet Generator</title>
+
+    <!-- nunito font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <h1 class="title">VSCode Snippet Generator</h1>
     <div class="container">
         <div class="user-input">
-            <input type="text" name="name" id="name" placeholder="Snippet Name...">
-            <input type="text" name="prefix" id="prefix" placeholder="Snippet Trigger Prefix...">
-            <input type="text" name="description" id="description" placeholder="Snippet Description...">
-            <textarea title="snippet" name="snippet" id="snippet" cols="30" rows="10"></textarea>
+            <div class="top">
+                <input type="text" name="name" id="name" placeholder="Snippet Name...">
+                <input type="text" name="prefix" id="prefix" placeholder="Snippet Trigger Prefix...">
+                <input type="text" name="description" id="description" placeholder="Snippet Description...">
+            </div>
+            <div class="bottom"><textarea title="snippet" name="snippet" id="snippet" cols="30" rows="10"></textarea>
+            </div>
         </div>
-        <div class="result">
-            <pre>
-                <code>
-                    <!-- <span class="snippet-name"></span>: {
-                        "prefix": <span class="snippet-prefix"></span>,
-                        "body": [
-                        <span class="snippet-body"></span>
-                        ],
-                        "description": <span class="snippet-description"></span>
-                    } -->
-                </code>
-            </pre>
+        <div class="user-result">
+            <div class="result">
+                <pre>
+                    <code>
+                    </code>
+                </pre>
+            </div>
         </div>
     </div>
 

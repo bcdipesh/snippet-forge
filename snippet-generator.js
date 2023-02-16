@@ -40,9 +40,11 @@ const setSnippet = (name, prefix, description, snippet) => {
 	};
 
 	// select DOM and insert the formatted JSON string output of the generated snippet
-	document.querySelector(
-		'.result pre code'
-	).innerText = `"${name}":${JSON.stringify(snippetObject, undefined, 4)}`;
+	document.querySelector('code').innerText = `"${name}":${JSON.stringify(
+		snippetObject,
+		undefined,
+		4
+	)}`;
 };
 
 /**
