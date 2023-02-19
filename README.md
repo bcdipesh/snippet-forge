@@ -31,3 +31,7 @@ To use the custom user snippet generator, simply visit https://bcdipesh.github.i
 ## Acknowledgements
 
 The custom user snippet generator is inspired by Pawel Grzybek's snippet generator, which you can check out at https://snippet-generator.app/.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE.md` file for details.
