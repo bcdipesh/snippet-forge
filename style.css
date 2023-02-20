@@ -72,3 +72,13 @@ textarea:focus {
 	align-items: center;
 	height: 100%;
 }
+
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+}
+
+footer p {
+	margin-left: 1rem;
+}
