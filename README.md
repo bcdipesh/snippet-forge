@@ -11,13 +11,13 @@ As a software engineering bootcamp student, I often found myself copying and pas
 The custom user snippet generator currently has the following features:
 
 -   Generate custom user snippets for Visual Studio Code
+-   Copy the generated code snippet to the clipboard with one click
 
 ## Future Work
 
 The custom user snippet generator is a work in progress, and I plan to add more features in the future, such as:
 
 -   Choose from a list of popular code snippets or create your own
--   Copy the generated code snippet to the clipboard with one click
 -   Ability to save generated snippets for later use
 -   Option to edit or delete previously saved snippets
 -   Integration with other text editors besides Visual Studio Code
