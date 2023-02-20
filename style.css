@@ -57,6 +57,14 @@ textarea:focus {
 	padding: 1rem;
 }
 
+.copy-btn {
+	padding: 0.2rem 1.5rem;
+}
+
+.copy-btn:hover {
+	cursor: pointer;
+}
+
 .result {
 	display: flex;
 	flex-direction: column;

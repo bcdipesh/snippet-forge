@@ -6,6 +6,7 @@ const nameInput = document.querySelector('#name');
 const prefixInput = document.querySelector('#prefix');
 const descriptionInput = document.querySelector('#description');
 const snippetInput = document.querySelector('#snippet');
+const copyBtn = document.querySelector('.copy-btn');
 
 /**
  * Gathers user input from the input field and returns
@@ -64,9 +65,28 @@ const setSnippet = (name, prefix, description, snippet) => {
  * @param {Object} e	The event object.
  */
 const generateSnippet = (e) => {
+	// reset old clipboard data and copy button text
+	copyBtn.innerText = 'Copy Snippet';
+	navigator.clipboard.writeText('');
+
 	const { name, prefix, description, snippet } = collectUserInput();
 	setSnippet(name, prefix, description, snippet);
 };
 
+/**
+ * Copy snippet to clipboard
+ */
+const copyToClipboard = (e) => {
+	// get the snippet
+	const snippet = document.querySelector('.result pre code').innerText;
+
+	// copy the snippet
+	navigator.clipboard.writeText(snippet);
+
+	// notify user that snippet it copied
+	copyBtn.innerText = 'Snippet Copied Successfully!';
+};
+
 // add event listener
 userInput.addEventListener('keyup', generateSnippet);
+copyBtn.addEventListener('click', copyToClipboard);
