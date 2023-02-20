@@ -80,11 +80,14 @@ const copyToClipboard = (e) => {
 	// get the snippet
 	const snippet = document.querySelector('.result pre code').innerText;
 
-	// copy the snippet
-	navigator.clipboard.writeText(snippet);
+	// copy only if the snippet is not empty
+	if (snippet.trim()) {
+		// copy the snippet
+		navigator.clipboard.writeText(snippet);
 
-	// notify user that snippet it copied
-	copyBtn.innerText = 'Snippet Copied Successfully!';
+		// notify user that snippet it copied
+		copyBtn.innerText = 'Snippet Copied Successfully!';
+	}
 };
 
 // add event listener
