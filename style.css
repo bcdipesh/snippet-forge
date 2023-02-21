@@ -4,19 +4,37 @@
 	overflow: hidden;
 }
 
+*::selection {
+	background-color: white;
+	color: black;
+}
+
 body {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: lightgray;
+	background-color: black;
+	color: white;
+}
+
+.title {
+	font-size: 3rem;
+}
+
+.caption {
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 
 .container {
 	width: 100%;
+	padding: 1rem;
 	display: flex;
 	justify-content: space-between;
+	border: 0.2rem solid white;
+	border-radius: 0.5rem;
 }
 
 .user-input,
@@ -32,8 +50,10 @@ body {
 input[type='text'] {
 	padding: 1rem;
 	font-size: 1rem;
-	border: none;
 	width: 32%;
+	background-color: black;
+	border: 0.1rem solid white;
+	color: white;
 }
 
 textarea {
@@ -41,10 +61,12 @@ textarea {
 	height: 50vh;
 	width: 50vw;
 	width: 100%;
-	border: none;
 	resize: none;
 	padding: 1rem;
 	font-size: 1rem;
+	background-color: black;
+	border: 0.1rem solid white;
+	color: white;
 }
 
 input,
@@ -53,16 +75,23 @@ textarea:focus {
 }
 
 .user-result {
-	background-color: white;
+	border: 0.1rem solid white;
 	padding: 1rem;
 }
 
 .copy-btn {
-	padding: 0.2rem 1.5rem;
+	padding: 1rem 1.5rem;
+	font-size: 1rem;
+	background-color: black;
+	color: white;
+	border: 0.1rem solid white;
+	transition: background-color 0.4s;
 }
 
 .copy-btn:hover {
 	cursor: pointer;
+	background-color: white;
+	color: black;
 }
 
 .result {
@@ -81,4 +110,9 @@ footer {
 
 footer p {
 	margin-left: 1rem;
+}
+
+footer a {
+	color: #f8e81c;
+	text-decoration: none;
 }
