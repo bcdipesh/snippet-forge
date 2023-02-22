@@ -90,8 +90,8 @@ textarea:focus {
 
 .copy-btn:hover {
 	cursor: pointer;
-	background-color: white;
-	color: black;
+	background-color: black !important;
+	color: #f8e81c;
 }
 
 .result {
