@@ -1,36 +1,20 @@
-# Custom User Snippet Generator for VSCode
+# Snippet Forge
 
-This is a web application that I created to generate custom user snippets for Visual Studio Code using HTML, CSS, and JavaScript.
+**Snippet Forge** is a website designed for programmers to swiftly generate and insert frequently used code snippets into their VSCode editor. By harnessing HTML, CSS, and JavaScript, it streamlines the process, allowing users to save time and enhance productivity in their coding endeavors.
 
 ## Motivation
 
-As a software engineering bootcamp student, I often found myself copying and pasting the same code snippets over and over again, such as the Jasmine testing library CDN. To solve this problem, I researched ways to generate custom user snippets for Visual Studio Code and came across Pawel Grzybek's snippet generator. Inspired by his work, I decided to create my own version of the generator to practice and reinforce my coding skills.
+**Snippet Forge** is a game-changer for developers seeking efficiency and convenience in their coding workflow. Picture this: you're knee-deep in a complex coding project, and you find yourself repeatedly copying and pasting the same chunks of code. It's tedious, time-consuming, and let's face it, it's a productivity killer. That's where **Snippet Forge** swoops in to save the day. With just a few steps, you can swiftly generate and insert those frequently used code snippets, freeing up valuable mental bandwidth for tackling more challenging tasks. No more hunting through old files or scouring the web for that elusive code snippet – it's all at your fingertips. Whether you're a seasoned developer or just starting out, **Snippet** Forge empowers you to code smarter, faster, and with less hassle, so you can focus on what truly matters – building awesome software.
 
-## Features
-
-The custom user snippet generator currently has the following features:
-
--   Generate custom user snippets for Visual Studio Code
--   Copy the generated code snippet to the clipboard with one click
-
-## Future Work
-
-The custom user snippet generator is a work in progress, and I plan to add more features in the future, such as:
-
--   Choose from a list of popular code snippets or create your own
--   Ability to save generated snippets for later use
--   Option to edit or delete previously saved snippets
--   Integration with other text editors besides Visual Studio Code
-
-## Usage
+## Quick Start and Usage
 
 To use the custom user snippet generator, simply visit https://bcdipesh.github.io/snippet-generator/ and follow the on-screen instructions or watch the video below.
 
 [![snippet-generator](https://img.youtube.com/vi/NIzieNaUX-g/0.jpg)](https://www.youtube.com/watch?v=NIzieNaUX-g)
 
-## Acknowledgements
+## Contributing
 
-The custom user snippet generator is inspired by Pawel Grzybek's snippet generator, which you can check out at https://snippet-generator.app/.
+If you'd like to contribute, please fork the repository and open a pull request to the `main` branch.
 
 ## License
 
