@@ -8,7 +8,7 @@
 
 ## Quick Start and Usage
 
-To use the custom user snippet generator, simply visit https://bcdipesh.github.io/snippet-generator/ and follow the on-screen instructions or watch the video below.
+To use the custom user snippet generator, simply click this [link](https://bcdipesh.github.io/snippet-forge/) and follow the on-screen instructions or watch the video below.
 
 [![snippet-generator](https://img.youtube.com/vi/NIzieNaUX-g/0.jpg)](https://www.youtube.com/watch?v=NIzieNaUX-g)
 
