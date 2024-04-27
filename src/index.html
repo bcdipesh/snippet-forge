@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Snippet Generator for VSCode" />
+    <meta name="author" content="Dipesh B C" />
+    <title>
+      Snippet Generator | Generate custom user snippets for Visual Studio Code
+    </title>
+
+    <!-- nunito font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <h1 class="title">VSCode Snippet Generator</h1>
+    <p class="caption">Generate custom user snippets for Visual Studio Code</p>
+    <div class="container">
+      <div class="user-input">
+        <div class="top">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Snippet Name..."
+          />
+          <input
+            type="text"
+            name="prefix"
+            id="prefix"
+            placeholder="Snippet Trigger Prefix..."
+          />
+          <input
+            type="text"
+            name="description"
+            id="description"
+            placeholder="Snippet Description..."
+          />
+        </div>
+        <div class="bottom">
+          <textarea
+            title="snippet"
+            name="snippet"
+            id="snippet"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+      </div>
+      <div class="user-result">
+        <button type="button" class="copy-btn">Copy Snippet</button>
+        <div class="result">
+          <pre>
+                    <code>
+                    </code>
+                </pre>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        created by
+        <a
+          href="https://bcdipesh.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Dipesh B C</a
+        >
+      </p>
+      <p>|</p>
+      <p>
+        source code on
+        <a
+          href="https://github.com/bcdipesh/snippet-forge"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+      </p>
+    </footer>
+
+    <script src="./ts/index.ts" type="module"></script>
+  </body>
+</html>

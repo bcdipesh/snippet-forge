@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  overflow: hidden;
+  background-color: #121212 !important;
+}
+
+*::selection {
+  background-color: white;
+  color: black;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.title {
+  font-size: 3rem;
+  color: black;
+  -webkit-text-stroke-width: 0.005px;
+  -webkit-text-stroke-color: #f8e81c;
+}
+
+.caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.container {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border: 0.2rem solid white;
+  border-radius: 0.5rem;
+}
+
+.user-input,
+.user-result {
+  width: 49%;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  padding: 1rem;
+  font-size: 1rem;
+  width: 32%;
+  border: 0.1rem solid white;
+  color: white;
+}
+
+textarea {
+  margin-top: 1rem;
+  height: 50vh;
+  width: 50vw;
+  width: 100%;
+  resize: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 0.1rem solid white;
+  color: white;
+}
+
+input,
+textarea:focus {
+  outline: none;
+}
+
+.user-result {
+  border: 0.1rem solid white;
+  padding: 1rem;
+}
+
+.copy-btn {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  border: 0.1rem solid white;
+  transition: 0.4s;
+}
+
+.copy-btn:hover {
+  cursor: pointer;
+  background-color: black !important;
+  color: #f8e81c;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  margin-left: 1rem;
+  color: #858585;
+}
+
+footer a {
+  color: #f8e81c;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.style-text {
+  color: #858585;
+}
