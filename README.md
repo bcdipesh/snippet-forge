@@ -1,5 +1,7 @@
 # Snippet Forge
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bf553905-63a4-4740-b62f-d49f81d84218/deploy-status)](https://app.netlify.com/sites/snippet-forge/deploys)
+
 **Snippet Forge** is a web app designed for programmers to swiftly generate and insert frequently used code snippets into their VSCode editor. By harnessing HTML, CSS, and JavaScript, it streamlines the process, allowing users to save time and enhance productivity in their coding endeavors.
 
 ## Motivation
