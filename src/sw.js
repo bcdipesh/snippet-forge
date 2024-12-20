@@ -1,4 +1,4 @@
-const CACHE = "snippet-forge-v2";
+const CACHE = "snippet-forge-v3";
 
 importScripts(
   "https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js"
