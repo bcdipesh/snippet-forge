@@ -7,7 +7,7 @@
     <meta name="description" content="Snippet Generator for VSCode" />
     <meta name="author" content="Dipesh B C" />
 
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="manifest" href="site.webmanifest" />
     <title>
       Snippet Generator | Generate custom user snippets for Visual Studio Code
     </title>
@@ -92,5 +92,10 @@
     </footer>
 
     <script src="./ts/index.ts" type="module"></script>
+    <script type="module">
+      if (typeof navigator.serviceWorker !== "undefined") {
+        navigator.serviceWorker.register(new URL('sw.js', import.meta.url));
+      }
+    </script>
   </body>
 </html>
