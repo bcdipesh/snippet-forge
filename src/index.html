@@ -7,6 +7,13 @@
     <meta name="description" content="Snippet Generator for VSCode" />
     <meta name="author" content="Dipesh B C" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link relf="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      ref="stylesheet"
+    />
+
     <link rel="manifest" href="site.webmanifest" />
     <title>
       Snippet Generator | Generate custom user snippets for Visual Studio Code
@@ -94,7 +101,7 @@
     <script src="./ts/index.ts" type="module"></script>
     <script type="module">
       if (typeof navigator.serviceWorker !== "undefined") {
-        navigator.serviceWorker.register(new URL('sw.js', import.meta.url));
+        navigator.serviceWorker.register(new URL("sw.js", import.meta.url));
       }
     </script>
   </body>
