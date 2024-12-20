@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   font-family: "Inter", serif;
-  overflow: hidden;
   background-color: #121212 !important;
 }
 
@@ -35,6 +34,7 @@ body {
   width: 100%;
   padding: 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   border: 0.2rem solid white;
   border-radius: 0.5rem;
@@ -42,7 +42,7 @@ body {
 
 .user-input,
 .user-result {
-  width: 49%;
+  overflow-y: auto;
 }
 
 .top {
