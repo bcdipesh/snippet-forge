@@ -1,23 +1,36 @@
-# Snippet Forge
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bf553905-63a4-4740-b62f-d49f81d84218/deploy-status)](https://app.netlify.com/sites/snippet-forge/deploys)
+## Getting Started
 
-**Snippet Forge** is a web app designed for programmers to swiftly generate and insert frequently used code snippets into their VSCode editor. By harnessing HTML, CSS, and JavaScript, it streamlines the process, allowing users to save time and enhance productivity in their coding endeavors.
+First, run the development server:
 
-## Motivation
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-**Snippet Forge** is a game-changer for developers seeking efficiency and convenience in their coding workflow. Picture this: you're knee-deep in a complex coding project, and you find yourself repeatedly copying and pasting the same chunks of code. It's tedious, time-consuming, and let's face it, it's a productivity killer. That's where **Snippet Forge** swoops in to save the day. With just a few steps, you can swiftly generate and insert those frequently used code snippets, freeing up valuable mental bandwidth for tackling more challenging tasks. No more hunting through old files or scouring the web for that elusive code snippet – it's all at your fingertips. Whether you're a seasoned developer or just starting out, **Snippet** Forge empowers you to code smarter, faster, and with less hassle, so you can focus on what truly matters – building awesome software.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Quick Start and Usage
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-To use the custom user snippet generator, simply click this [link](https://bcdipesh.github.io/snippet-forge/) and follow the on-screen instructions or watch the video below.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-[![snippet-generator](https://img.youtube.com/vi/NIzieNaUX-g/0.jpg)](https://www.youtube.com/watch?v=NIzieNaUX-g)
+## Learn More
 
-## Contributing
+To learn more about Next.js, take a look at the following resources:
 
-If you'd like to contribute, please fork the repository and open a pull request to the `main` branch.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## License
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-This project is licensed under the MIT License. See the `LICENSE.md` file for details.
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
